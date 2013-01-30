@@ -30,6 +30,7 @@ public class CheckpointRace extends JavaPlugin implements Listener
 	private Map<Player, Boolean> playerInCreationMode = new HashMap<Player, Boolean>();
 	private HashSet<Race> races = new HashSet<Race>();
 
+	// This is a test
 	public void onEnable()
 	{
 		log = this.getLogger();
