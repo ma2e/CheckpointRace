@@ -1,0 +1,24 @@
+name: CheckpointRace
+main: in.maze.CheckpointRace.CheckpointRace
+author: maZe | cpr@maze.in
+website: http://maze.in/minecraft
+version: 0.1b
+commands:
+    cprace:
+        description: Checkpoint Race - race against the clock
+        usage: Try /cprace help for a detailed help
+        permission: cprace.allowed
+        permission-message: You don't have have the permission to race.
+        aliases: cpr
+permissions:
+    cprace.*:
+        description: Gives acces to all race commands
+        children:
+            cprace.allowed: true
+            cprace.create: true
+    cprace.allowed:
+        description: Gives race access
+        default: true
+    cprace.create:
+        description: Grants permission to create race tracks
+        default: true
